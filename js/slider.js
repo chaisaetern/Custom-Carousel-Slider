@@ -81,13 +81,13 @@ const pause = document.querySelector('.pause');
 
 pause.addEventListener('click', function() {
     pause.style.display = 'none';
-    play.style.display = 'grid';
+    play.style.display = 'flex';
     window.clearInterval(autoPlay);
 });
 
 play.addEventListener('click', function() {
     play.style.display = 'none';
-    pause.style.display = 'grid';
+    pause.style.display = 'flex';
     autoPlay = setInterval(() => {
         autoSlider();
     }, intTimer);

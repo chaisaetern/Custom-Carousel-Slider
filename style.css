@@ -766,7 +766,7 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 25px 0 100px 0;
+  padding: 0;
 }
 .container .carousel .slider > section .reviews-profile {
   margin: 50px;
@@ -775,11 +775,10 @@ textarea {
 }
 .container .carousel .slider > section .reviews-profile h4 {
   margin: 15px 0 0 0;
-  font-size: 20px;
 }
 .container .carousel .slider > section .reviews-profile p {
   margin: 0;
-  font-size: 20px;
+  text-shadow: 0 0 1px #fff;
 }
 .container .carousel .slider > section .reviews-profile .thumbnail-container {
   width: 200px;
@@ -789,7 +788,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(0 0 5px #000);
+  filter: drop-shadow(0 0 5px #fff);
 }
 .container .carousel .slider > section .reviews-profile .thumbnail-container > img {
   position: relative;
@@ -841,6 +840,7 @@ textarea {
 }
 .container .carousel .slider > section .reviews-text .name-attribution {
   font-size: 20px;
+  padding-top: 20px;
 }
 .container .carousel .controls .arrow {
   position: absolute;
@@ -899,8 +899,11 @@ textarea {
   text-align: start;
   cursor: pointer;
   font-weight: 500 !important;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  min-width: 135px;
 }
 .container .carousel .controls-2 .play {
   color: green;
@@ -917,7 +920,7 @@ textarea {
 
 @media (max-width: 1024px) {
   .reviews {
-    padding: 0 0 120px 0 !important;
+    padding: 0 0 20px 0 !important;
   }
 
   .arrow {
@@ -1031,11 +1034,6 @@ textarea {
 
 .gallery-caption {
   display: block;
-}
-
-.site-header,
-.site-footer {
-  display: none;
 }
 
 /*--------------------------------------------------------------

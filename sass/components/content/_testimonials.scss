@@ -49,7 +49,7 @@
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
-                padding: 25px 0 100px 0;
+                padding: 0;
 
                 .reviews-profile {
                     margin: 50px;
@@ -58,12 +58,11 @@
 
                     h4 {
                         margin: 15px 0 0 0;
-                        font-size: 20px;
                     }
                     
                     p {
                         margin: 0;
-                        font-size: 20px;
+                        text-shadow: 0 0 1px #fff;
                     }
                     
                     .thumbnail-container {
@@ -74,7 +73,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        filter: drop-shadow(0 0 5px #000);
+                        filter: drop-shadow(0 0 5px #fff);
 
                         & > img {
                             position: relative;
@@ -91,7 +90,6 @@
                     justify-content: center;
                     text-align: center;
                     max-width: 100%;
-                    // position: relative;
                     margin: 10px 0;
                     
                     p {
@@ -133,6 +131,7 @@
 
                     .name-attribution {
                         font-size: 20px;
+                        padding-top: 20px;
                     }
 
                 }
@@ -203,8 +202,12 @@
                 text-align: start;
                 cursor: pointer;
                 font-weight: 500 !important;
-                display: grid;
-                place-items: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                // place-items: center;
+                min-width: 135px;
             }
 
             .play {
@@ -228,7 +231,7 @@
 
 @media (max-width: 1024px) {
     .reviews {
-        padding: 0 0 120px 0 !important;
+        padding: 0 0 20px 0 !important;
     }
     .arrow {
         display: none !important;
@@ -238,25 +241,3 @@
         padding: 0 5%;
     }
 }
-
-// @media (max-width: 850px) {
-//     .reviews-text p:not(.name-attribution) {
-//         &::before {
-//             right: 450px;
-//         }
-//         &::after {
-//             left: 450px;
-//         }
-//     }
-// }
-
-// @media (max-width: 500px) {
-//     .reviews-text p:not(.name-attribution) {
-//         &::before {
-//             right: 350px;
-//         }
-//         &::after {
-//             left: 350px;
-//         }
-//     }
-// }
