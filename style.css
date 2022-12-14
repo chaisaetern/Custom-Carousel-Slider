@@ -803,41 +803,44 @@ textarea {
   justify-content: center;
   text-align: center;
   max-width: 100%;
-  position: relative;
   margin: 10px 0;
 }
 .container .carousel .slider > section .reviews-text p {
   font-size: 30px;
   max-width: 750px;
   position: relative;
-  margin-bottom: 15px;
-  padding: 0 50px;
+  margin: 0;
+  padding: 50px;
+}
+.container .carousel .slider > section .reviews-text p:not(.name-attribution) {
+  overflow: hidden;
 }
 .container .carousel .slider > section .reviews-text p:not(.name-attribution)::before {
   content: open-quote;
   position: absolute;
-  top: 15px;
-  left: -25px;
+  top: 20px;
+  left: 10px;
   transform: translateY(-50%);
-  font-size: 4em;
+  font-size: 5em;
   color: #5681DF;
   font-weight: bold;
   text-shadow: 0 0 1px #000;
+  height: 1em;
 }
 .container .carousel .slider > section .reviews-text p:not(.name-attribution)::after {
   content: close-quote;
   position: absolute;
-  bottom: -50px;
-  right: -20px;
+  bottom: 30px;
+  right: 5px;
   transform: translateY(50%);
-  font-size: 4em;
+  font-size: 5em;
   color: #5681DF;
   font-weight: bold;
   text-shadow: 0 0 1px #000;
+  height: 1em;
 }
 .container .carousel .slider > section .reviews-text .name-attribution {
   font-size: 20px;
-  margin-top: 30px;
 }
 .container .carousel .controls .arrow {
   position: absolute;
