@@ -56,7 +56,7 @@ next.addEventListener('click', function() {
 });
 
 
-// Used in auto slider
+// Used to autoplay
 function autoSlider() {
     sectionIndex = (sectionIndex < slidesCountIndex) ? sectionIndex + 1 : 0;
     document.querySelector('.controls .selected').classList.remove('selected');
@@ -69,13 +69,13 @@ function autoSlider() {
 let autoPlay;
 let intTimer = 5000;
 
-
+// Set slider to automatically play when loaded
 autoPlay = setInterval(() => {
     autoSlider();
 }, intTimer);
 
 
-// Play and Pause btns
+// Play and Pause slider
 const play = document.querySelector('.play');
 const pause = document.querySelector('.pause');
 
