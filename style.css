@@ -773,9 +773,11 @@ textarea {
 }
 .container .carousel .slider > section .reviews-profile h4 {
   margin: 15px 0 0 0;
+  font-size: 20px;
 }
 .container .carousel .slider > section .reviews-profile p {
   margin: 0;
+  font-size: 20px;
 }
 .container .carousel .slider > section .reviews-profile .thumbnail-container {
   width: 150px;
@@ -804,13 +806,12 @@ textarea {
   margin: 10px 0;
 }
 .container .carousel .slider > section .reviews-text p {
-  margin: 5px 0 5px 20px;
   font-size: 30px;
   font-weight: 300;
   max-width: 750px;
 }
 .container .carousel .slider > section .reviews-text .name-attribution {
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 30px;
 }
 .container .carousel .controls .arrow {

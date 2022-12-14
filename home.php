@@ -41,7 +41,7 @@ get_header();
                         echo '<div class="reviews-text">';
                             the_content();
                             echo '<p class="name-attribution">';
-                                echo '- ';
+                                echo '— ';
                                 echo the_field('name_attribution');
                             echo '</p>';
                         echo '</div>';
