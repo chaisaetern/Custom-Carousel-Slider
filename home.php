@@ -11,11 +11,11 @@ get_header();
 
 <main id="main" class="container">
     <div class="carousel">
-        <h2>What Our Customers Say About Us</h2>
+        <h1>What our customers say about us</h1>
         <div class="slider">
             <?php
                 $args = array( 
-                    'post_type' => 'Testimonials',
+                    'post_type' => 'Reviews',
                     'post_status' => 'publish',
                     'posts_per_page' => 4,
                     'orderby' => 'title',
@@ -23,9 +23,9 @@ get_header();
                 );
                 $posts = new WP_Query( $args );
                 while ( $posts -> have_posts() ) : $posts -> the_post();
-                    echo '<section class="testimonial">';
+                    echo '<section class="reviews">';
                         if ( has_post_thumbnail() ) {
-                            echo '<div class="testimonial-profile">';
+                            echo '<div class="reviews-profile">';
                                 echo '<div class="thumbnail-container">';
                                     the_post_thumbnail();
                                 echo '</div>';
@@ -37,7 +37,7 @@ get_header();
                                 echo '</p>';
                             echo '</div>';
                         }
-                        echo '<div class="testimonial-text">';
+                        echo '<div class="reviews-text">';
                             the_content();
                             echo '<h5>';
                                 // Should be ACF, maybe?
@@ -76,9 +76,9 @@ get_header();
                 </span>
             </section>
             <ul>
-                <!-- Check count of sliders (testimonials) -->
+                <!-- Check count of sliders (reviews) -->
                 <?php 
-                    $count_posts = wp_count_posts('testimonials');
+                    $count_posts = wp_count_posts('reviews');
                     $published_posts = $count_posts->publish;
                     for ($i = 0; $i < $published_posts; $i++) {
                         echo '<li class="selected"></li>';

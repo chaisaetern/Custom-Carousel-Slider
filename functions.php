@@ -196,17 +196,17 @@ function custom_post_type() {
   
 	// Set UI labels for Custom Post Type
 		$labels = array(
-			'name'                => _x( 'Testimonials', 'Post Type General Name', 'custompost' ),
-			'singular_name'       => _x( 'Testimonial', 'Post Type Singular Name', 'custompost' ),
-			'menu_name'           => __( 'Testimonials', 'custompost' ),
-			'parent_item_colon'   => __( 'Parent Testimonial', 'custompost' ),
-			'all_items'           => __( 'All Testimonials', 'custompost' ),
-			'view_item'           => __( 'View Testimonial', 'custompost' ),
-			'add_new_item'        => __( 'Add New Testimonial', 'custompost' ),
+			'name'                => _x( 'Reviews', 'Post Type General Name', 'custompost' ),
+			'singular_name'       => _x( 'Review', 'Post Type Singular Name', 'custompost' ),
+			'menu_name'           => __( 'Reviews', 'custompost' ),
+			'parent_item_colon'   => __( 'Parent Review', 'custompost' ),
+			'all_items'           => __( 'All Reviews', 'custompost' ),
+			'view_item'           => __( 'View Review', 'custompost' ),
+			'add_new_item'        => __( 'Add New Review', 'custompost' ),
 			'add_new'             => __( 'Add New', 'custompost' ),
-			'edit_item'           => __( 'Edit Testimonial', 'custompost' ),
-			'update_item'         => __( 'Update Testimonial', 'custompost' ),
-			'search_items'        => __( 'Search Testimonial', 'custompost' ),
+			'edit_item'           => __( 'Edit Review', 'custompost' ),
+			'update_item'         => __( 'Update Review', 'custompost' ),
+			'search_items'        => __( 'Search Review', 'custompost' ),
 			'not_found'           => __( 'Not Found', 'custompost' ),
 			'not_found_in_trash'  => __( 'Not found in Trash', 'custompost' ),
 		);
@@ -214,8 +214,8 @@ function custom_post_type() {
 	// Set other options for Custom Post Type
 		  
 		$args = array(
-			'label'               => __( 'testimonials', 'custompost' ),
-			'description'         => __( 'Testimonials and reviews', 'custompost' ),
+			'label'               => __( 'reviews', 'custompost' ),
+			'description'         => __( 'Reviews and reviews', 'custompost' ),
 			'labels'              => $labels,
 			// Features this CPT supports in Post Editor
 			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
@@ -242,7 +242,7 @@ function custom_post_type() {
 		);
 		  
 		// Registering your Custom Post Type
-		register_post_type( 'testimonials', $args );
+		register_post_type( 'Reviews', $args );
 	  
 	}
 	  

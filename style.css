@@ -725,7 +725,7 @@ textarea {
 
 /**
  * 
- * Testimonials Carousel
+ * Reviewss Carousel
  * set max on page shown to 4
  */
 .container {
@@ -733,19 +733,22 @@ textarea {
   margin: 0 auto;
   background: #11285A;
   color: #fff;
+  text-shadow: 0 0 1px #fff;
   letter-spacing: 1px;
 }
 .container .carousel {
-  min-height: 500px;
+  min-height: 420px;
   height: 100%;
   position: relative;
   overflow: hidden;
   text-align: center;
 }
-.container .carousel > h2 {
+.container .carousel > h1 {
   color: #5ED815;
+  text-shadow: 0 0 1px #5ED815;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 3em;
+  margin-bottom: 0;
 }
 .container .carousel .slider {
   height: 100%;
@@ -763,42 +766,43 @@ textarea {
   flex-wrap: wrap;
   padding: 25px 0 100px 0;
 }
-.container .carousel .slider > section .testimonial-profile {
+.container .carousel .slider > section .reviews-profile {
   margin: 50px;
 }
-.container .carousel .slider > section .testimonial-profile h4 {
+.container .carousel .slider > section .reviews-profile h4 {
   margin: 15px 0 0 0;
 }
-.container .carousel .slider > section .testimonial-profile p {
+.container .carousel .slider > section .reviews-profile p {
   margin: 0;
-  max-width: 750px;
 }
-.container .carousel .slider > section .testimonial-profile .thumbnail-container {
+.container .carousel .slider > section .reviews-profile .thumbnail-container {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
+  display: grid;
+  place-items: center;
 }
-.container .carousel .slider > section .testimonial-profile .thumbnail-container > img {
+.container .carousel .slider > section .reviews-profile .thumbnail-container > img {
   width: 100%;
-  max-width: 350px;
   height: 100%;
-  max-height: 350px;
-  transform: scale(1.5);
+  transform: scale(1.25);
 }
-.container .carousel .slider > section .testimonial-text {
+.container .carousel .slider > section .reviews-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 500px;
+  max-width: 100%;
   position: relative;
 }
-.container .carousel .slider > section .testimonial-text h1, .container .carousel .slider > section .testimonial-text p {
+.container .carousel .slider > section .reviews-text h1, .container .carousel .slider > section .reviews-text p {
   margin: 5px 0 5px 20px;
 }
-.container .carousel .slider > section .testimonial-text p {
-  font-size: 20px;
+.container .carousel .slider > section .reviews-text p {
+  font-size: 25px;
+  font-weight: 300;
+  max-width: 800px;
 }
 .container .carousel .controls .arrow {
   position: absolute;
@@ -856,22 +860,25 @@ textarea {
   transform: translate(-50%);
   text-align: start;
   cursor: pointer;
+  font-weight: 300 !important;
   display: grid;
   place-items: center;
 }
 .container .carousel .controls-2 .play {
   color: green;
+  text-shadow: 0 0 1px green;
   display: none;
 }
 .container .carousel .controls-2 .pause {
   color: red;
+  text-shadow: 0 0 1px red;
 }
 .container .carousel .controls-2 i {
   font-size: 30px;
 }
 
 @media (max-width: 1024px) {
-  .testimonial {
+  .reviews {
     padding: 0 0 120px 0 !important;
   }
 
@@ -879,7 +886,7 @@ textarea {
     display: none !important;
   }
 
-  .testimonial-text p {
+  .reviews-text p {
     margin: 0 !important;
     padding: 0 5%;
   }
