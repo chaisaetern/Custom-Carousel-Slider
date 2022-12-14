@@ -39,11 +39,11 @@ get_header();
                         }
                         echo '<div class="reviews-text">';
                             the_content();
-                            echo '<h5>';
+                            echo '<p class="name-attribution">';
                                 // Should be ACF, maybe?
                                 echo '- ';
                                 echo the_field('name_attribution');
-                            echo '</h5>';
+                            echo '</p>';
                         echo '</div>';
                     echo '</section>';
                 endwhile;
