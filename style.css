@@ -780,13 +780,17 @@ textarea {
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 0 5px #000);
 }
 .container .carousel .slider > section .reviews-profile .thumbnail-container > img {
-  width: 100%;
+  position: relative;
+  top: 3px;
+  min-width: 200px;
   height: 100%;
-  transform: scale(1.25);
+  transform: scale(1.1);
 }
 .container .carousel .slider > section .reviews-text {
   display: flex;
