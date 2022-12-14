@@ -770,6 +770,8 @@ textarea {
 }
 .container .carousel .slider > section .reviews-profile {
   margin: 50px;
+  display: grid;
+  place-items: center;
 }
 .container .carousel .slider > section .reviews-profile h4 {
   margin: 15px 0 0 0;
