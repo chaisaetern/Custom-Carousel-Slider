@@ -837,7 +837,7 @@ textarea {
 }
 .container .carousel .controls > ul {
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%);
   list-style: none;
@@ -863,7 +863,7 @@ textarea {
 }
 .container .carousel .controls-2 .ctrl {
   position: absolute;
-  bottom: 50px;
+  bottom: 25px;
   left: 50%;
   transform: translate(-50%);
   text-align: start;
