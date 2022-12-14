@@ -808,10 +808,10 @@ textarea {
 }
 .container .carousel .slider > section .reviews-text p {
   font-size: 30px;
-  font-weight: 300;
   max-width: 750px;
   position: relative;
   margin-bottom: 15px;
+  padding: 0 50px;
 }
 .container .carousel .slider > section .reviews-text p:not(.name-attribution)::before {
   content: open-quote;
