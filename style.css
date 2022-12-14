@@ -726,8 +726,8 @@ textarea {
 
 /**
  * 
- * Reviewss Carousel
- * set max on page shown to 4
+ * Reviews/Testimonials Carousel
+ * set max on page shown to 10
  */
 .container {
   width: 100%;
@@ -782,8 +782,8 @@ textarea {
   font-size: 20px;
 }
 .container .carousel .slider > section .reviews-profile .thumbnail-container {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -795,8 +795,7 @@ textarea {
   position: relative;
   top: 3px;
   min-width: 200px;
-  height: 100%;
-  transform: scale(1.1);
+  height: auto;
 }
 .container .carousel .slider > section .reviews-text {
   display: flex;
@@ -812,12 +811,13 @@ textarea {
   font-weight: 300;
   max-width: 750px;
   position: relative;
+  margin-bottom: 15px;
 }
 .container .carousel .slider > section .reviews-text p:not(.name-attribution)::before {
   content: open-quote;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: -25px;
   transform: translateY(-50%);
   font-size: 4em;
   color: #5681DF;
@@ -827,8 +827,8 @@ textarea {
 .container .carousel .slider > section .reviews-text p:not(.name-attribution)::after {
   content: close-quote;
   position: absolute;
-  bottom: -80px;
-  right: 10px;
+  bottom: -50px;
+  right: -20px;
   transform: translateY(50%);
   font-size: 4em;
   color: #5681DF;
@@ -895,7 +895,7 @@ textarea {
   transform: translate(-50%);
   text-align: start;
   cursor: pointer;
-  font-weight: 300 !important;
+  font-weight: 500 !important;
   display: grid;
   place-items: center;
 }

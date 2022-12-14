@@ -18,9 +18,9 @@ get_header();
                 $args = array( 
                     'post_type' => 'Reviews',
                     'post_status' => 'publish',
-                    'posts_per_page' => 4,
-                    'orderby' => 'title',
-                    'order' => 'ASC',
+                    'posts_per_page' => 10,
+                    'orderby' => 'date',
+                    'order' => 'DESC',
                 );
                 $posts = new WP_Query( $args );
                 while ( $posts -> have_posts() ) : $posts -> the_post();
