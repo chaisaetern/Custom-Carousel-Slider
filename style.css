@@ -811,6 +811,29 @@ textarea {
   font-size: 30px;
   font-weight: 300;
   max-width: 750px;
+  position: relative;
+}
+.container .carousel .slider > section .reviews-text p:not(.name-attribution)::before {
+  content: open-quote;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 4em;
+  color: #5681DF;
+  font-weight: bold;
+  text-shadow: 0 0 1px #000;
+}
+.container .carousel .slider > section .reviews-text p:not(.name-attribution)::after {
+  content: close-quote;
+  position: absolute;
+  bottom: -80px;
+  right: 10px;
+  transform: translateY(50%);
+  font-size: 4em;
+  color: #5681DF;
+  font-weight: bold;
+  text-shadow: 0 0 1px #000;
 }
 .container .carousel .slider > section .reviews-text .name-attribution {
   font-size: 20px;
