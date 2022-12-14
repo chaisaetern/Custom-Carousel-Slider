@@ -10,6 +10,7 @@ get_header();
 ?>
 
 <main id="main" class="container">
+    <!-- Start of custom carousel -->
     <div class="carousel">
         <h1>What our customers say about us</h1>
         <div class="slider">
@@ -40,7 +41,6 @@ get_header();
                         echo '<div class="reviews-text">';
                             the_content();
                             echo '<p class="name-attribution">';
-                                // Should be ACF, maybe?
                                 echo '- ';
                                 echo the_field('name_attribution');
                             echo '</p>';
@@ -76,7 +76,7 @@ get_header();
                 </span>
             </section>
             <ul>
-                <!-- Check count of sliders (reviews) -->
+                <!-- Check count of existing sliders (reviews) -->
                 <?php 
                     $count_posts = wp_count_posts('reviews');
                     $published_posts = $count_posts->publish;
